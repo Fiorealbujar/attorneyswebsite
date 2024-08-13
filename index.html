@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Law Firm</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>Law Firm</h1>
+            </div>
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#team">Our Team</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h2>Your Trusted Legal Partner</h2>
+            <p>We provide expert legal services tailored to your needs.</p>
+            <a href="#contact" class="btn">Get in Touch</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>Welcome to our law firm. We have been serving clients for over 20 years...</p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="service-item">
+                <i class="fas fa-balance-scale"></i>
+                <h3>Legal Consultation</h3>
+                <p>We offer expert advice to guide you through legal processes.</p>
+            </div>
+            <div class="service-item">
+                <i class="fas fa-gavel"></i>
+                <h3>Litigation</h3>
+                <p>Our attorneys will represent you in court with professionalism and expertise.</p>
+            </div>
+            <div class="service-item">
+                <i class="fas fa-briefcase"></i>
+                <h3>Corporate Law</h3>
+                <p>We provide legal services for businesses, ensuring compliance and protection.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="team">
+        <div class="container">
+            <h2>Meet Our Team</h2>
+            <div class="team-member">
+                <img src="attorney1.jpg" alt="Attorney 1">
+                <h3>John Doe</h3>
+                <p>Senior Partner</p>
+            </div>
+            <div class="team-member">
+                <img src="attorney2.jpg" alt="Attorney 2">
+                <h3>Jane Smith</h3>
+                <p>Partner</p>
+            </div>
+            <div class="team-member">
+                <img src="attorney3.jpg" alt="Attorney 3">
+                <h3>Robert Brown</h3>
+                <p>Associate Attorney</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Law Firm Name. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

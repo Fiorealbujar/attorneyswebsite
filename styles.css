@@ -1,0 +1,261 @@
+/* General Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Container */
+.container {
+  width: 85%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header Styles */
+.header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .logo h1 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+.header .nav-list {
+  list-style: none;
+  display: flex;
+}
+
+.header .nav-list li {
+  margin-left: 20px;
+}
+
+.header .nav-list a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.header .nav-list a:hover {
+  color: #ffcc00;
+}
+
+/* Hero Section */
+.hero {
+  background: url('hero.jpg') no-repeat center center/cover;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  padding: 0 20px;
+}
+
+.hero h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.hero .btn {
+  background-color: #ffcc00;
+  color: #333;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.hero .btn:hover {
+  background-color: #ffaa00;
+}
+
+/* About Section */
+.about {
+  padding: 60px 0;
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+/* Services Section */
+.services {
+  display: flex;
+  justify-content: space-between;
+  padding: 60px 0;
+}
+
+.services .service-item {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  width: 30%;
+  transition: transform 0.3s ease;
+}
+
+.services .service-item:hover {
+  transform: translateY(-10px);
+}
+
+.services .service-item i {
+  font-size: 2rem;
+  color: #ffcc00;
+  margin-bottom: 15px;
+}
+
+.services .service-item h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.services .service-item p {
+  font-size: 1rem;
+}
+
+/* Team Section */
+.team {
+  padding: 60px 0;
+  text-align: center;
+}
+
+.team h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.team .team-member {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 30%;
+  display: inline-block;
+  margin: 15px;
+  transition: transform 0.3s ease;
+}
+
+.team .team-member:hover {
+  transform: translateY(-10px);
+}
+
+.team .team-member img {
+  width: 100%;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.team .team-member h3 {
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+}
+
+.team .team-member p {
+  font-size: 1rem;
+  color: #777;
+}
+
+/* Contact Section */
+.contact {
+  padding: 60px 0;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.contact form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact .form-group {
+  margin-bottom: 20px;
+}
+
+.contact .form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.contact .form-group input,
+.contact .form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.contact .form-group textarea {
+  height: 150px;
+  resize: none;
+}
+
+.contact form button {
+  background-color: #ffcc00;
+  color: #333;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.contact form button:hover {
+  background-color: #ffaa00;
+}
+
+/* Footer */
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .services, .team {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .services .service-item,
+  .team .team-member {
+      width: 80%;
+      margin-bottom: 20px;
+  }
+
+  .header .nav-list {
+      flex-direction: column;
+  }
+
+  .header .nav-list li {
+      margin-bottom: 10px;
+  }
+}
